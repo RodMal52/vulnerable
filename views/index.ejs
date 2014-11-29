@@ -1,0 +1,30 @@
+<a href="#mensaje">Ir a final de página</a>
+
+<% entradas.forEach(function (entrada) { %>
+  <p>
+    <em><%- entrada.texto %></em>
+    <br/>
+    &emsp;&mdash; <strong><%- entrada.usuario %></strong>
+  </p>
+<%}); %>
+
+<form action="/">
+  <p>
+    <label for="texto">
+      <a name="mensaje">
+        Nuevo mensaje de <strong><%- usuario %></strong>:
+      </a>
+    </label>
+    <br/>
+    <textarea id="texto" type="text" name="texto" cols="60" rows="4"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Publicar mensaje"/>
+  </p>
+</form>
+
+<form action="/">
+  <p>
+    <input type="submit" name="logout" value="Terminar sesión"/>
+  </p>
+</form>

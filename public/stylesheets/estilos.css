@@ -1,0 +1,14 @@
+body {
+  background: Lavender;
+  color: LightSlateGrey;
+  font-family: sans-serif;
+  font-size: 120%;
+  margin: 40px;
+}
+
+h1 {
+  color: SteelBlue;
+  border-bottom: 5px solid SteelBlue;
+  margin: 10px 0px 20px 0px;
+  padding: 0px;
+}
